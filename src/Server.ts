@@ -13,8 +13,8 @@ import logger from '@shared/Logger';
 import {sequelize} from './sequelize';
 import { CakeOrderItem } from './daos/User/UserOrderItem';
 import { CookieOrderItem } from './daos/User/UserOrderItem';
-
 var cors = require('cors')
+require('dotenv').config();
 const app = express();
 
 const { BAD_REQUEST } = StatusCodes;

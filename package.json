@@ -2,8 +2,8 @@
   "name": "bakeryApp",
   "version": "0.0.0",
   "scripts": {
-    "clean": "rm -rf www/ || true",
-    "wbuild": "tsc && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "clean": "rm -rf dist/ || true",
+    "wbuild": "npm run build && cp .npmrc dist/.npmrc && cp package.json dist/package.json && cd dist && zip -r Archive.zip . && cd ..",
     "build": "ts-node build.ts",
     "lint": "eslint . --ext .ts",
     "start": "node -r module-alias/register ./dist --env=production",
