@@ -48,7 +48,7 @@ document.getElementById('cakeform').onsubmit = async function() {
       }
 
       // add await
-      await fetch('http://localhost:3000/api/users/add/cake', {
+      await fetch('http://localhost:8081/api/users/add/cake', {
               method: 'POST', // or 'PUT'
               mode: 'cors',
               headers: {

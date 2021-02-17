@@ -48,7 +48,7 @@ document.getElementById('cakeform').onsubmit = async function() {
       }
 
       // add await
-      await fetch('http://localhost:3000/api/users/add/cake', {
+      await fetch('http://node-express-env-2.eba-wyamc49h.us-west-2.elasticbeanstalk.com/api/users/add/cake', {
               method: 'POST', // or 'PUT'
               mode: 'cors',
               headers: {
