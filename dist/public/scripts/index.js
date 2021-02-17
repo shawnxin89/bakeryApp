@@ -1,5 +1,5 @@
 document.getElementById('cakeform').onsubmit = async function() {
-    alert("submitted");
+    //alert("submitted");
     var ele = document.getElementsByName('contactMet');
     var contactMetValue;
     for(i = 0; i < ele.length; i++) { 
