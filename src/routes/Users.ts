@@ -62,7 +62,8 @@ router.post('/add/cookie', async (req: IRequest, res: Response) => {
     }
     // add order to the database
     await userOrder.addCookie(cookieOrder);
-    return res.status(CREATED).end();
+    console.log("item created in database")
+    return res.status(CREATED).json({result:"created"});
 });
 
 /******************************************************************************
