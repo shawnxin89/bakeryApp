@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<title>Cake Menu and Order at Birdie Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button">Birdie Bakery</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">About</a>
+      <a href="cake.html" class="w3-bar-item w3-button">Order Cake</a>
+      <a href="cookie.html" class="w3-bar-item w3-button">Order Cookie</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<!-- <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:800px" id="home">
+  <img class="w3-image" src="/media/cake4.jpg" alt="cakepic1" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Birdie Bakery</h1>
+  </div>
+</header> -->
+
+<!-- Page content -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+   <!-- First Photo Grid-->
+   <div class="w3-row-padding w3-padding-16 w3-center" id="cakeList1">
+    <div class="w3-quarter">
+      <img src="/media/cake1.jpeg" alt="Sandwich" height="400" style="width:100%">
+      <!-- <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <img src="/media/cake2.jpeg" alt="Steak" height="400" style="width:100%">
+      <!-- <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <img src="/media/cake6.JPG" alt="Cherries" height="400" style="width:100%">
+      <!-- <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p> -->
+    </div>
+    <div class="w3-quarter">
+      <img src="/media/cake7.JPG" alt="Pasta and Wine" height="400" style="width:100%">
+      <!-- <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="cakeList2">
+    <div class="w3-quarter">
+      <img src="/media/cake10.JPG" alt="Sandwich" height="400" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="/media/cake11.jpg" alt="Steak" height="400" style="width:100%">
+    </div>
+    <div class="w3-quarter">
+      <img src="/media/cake14.JPG" alt="Cherries" height="400" style="width:100%">
+     </div>
+    <div class="w3-quarter">
+      <img src="/media/cake15.JPG" alt="Pasta and Wine" height="400" style="width:100%">
+      </div>
+  </div>
+  <hr>
+  <!-- Order Section -->
+  <div class="w3-container w3-padding-64" id="order">
+    <h1>Cake Order</h1><br>
+    <p>You can also contact us by email <a href="mailto:birdiebakeinfo@gmail.com">birdiebakeinfo@gmail.com</a>, or you can send us a message here:</p>
+    <form id="cakeform" target="_blank">
+      <p><b>Name</b></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your name" required name="Name" id="fname"></p>
+      <br>
+      <p><b>Preferred Contact Method</b></p>
+      <p><input class="w3-radio" type="radio" name="contactMet" value="Email" id="rEmail" checked><label>Email</label></p>
+      <p><input class="w3-radio" type="radio" name="contactMet" value="Instagram" id="rInstagram"><label>Instagram</label></p>  
+      <p><input class="w3-radio" type="radio" name="contactMet" value="Facebook Messager" id="rFacebook"><label>Facebook</label></p>   
+      <p><input class="w3-radio" type="radio" name="contactMet" value="Text Message" id="rText"><label>Text Message</label></p>
+      <br>
+      <p><b>Contact info (Your Email, IG, FB or Phone number)</b></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="ContactInfo" id="fcontactInfo"></p>
+      <br>
+      <p><b>Pick up date (If you need delivery service, please leave notes in the bottom of the form)</b></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" id="fpickUpDate"></p>
+      <br>
+      <p><b>Please choose cake size: (Need a customized size? Please leave a note in the bottom of the form)</b></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="4 inch Mini (two layers, serves 1-2, $50+)" id="rCakeSz1" checked><label>4 inch Mini (two layers, serves 1-2, $50+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="4 inch Regular (three layers, serves 2-4, $60+)" id="rCakeSz2"><label>4 inch Regular (three layers, serves 2-4, $60+)</label></p>  
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="4 inch Tall (four layers, serves 4-6, $70+)" id="rCakeSz3"><label>4 inch Tall (four layers, serves 4-6, $70+)</label></p>   
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="6 inch Regular (three layers, serves 6-12, $80+)" id="rCakeSz4"><label>6 inch Regular (three layers, serves 6-12, $80+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="6 inch Tall (four layers, serves 6-18, $100+)" id="rCakeSz5"><label>6 inch Tall (four layers, serves 6-18, $100+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="8 inch Regular (three layers, serves 8-18, $110+)" id="rCakeSz6"><label>8 inch Regular (three layers, serves 8-18, $110+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="8 inch Tall (four layers, serves 8-24, $135+)" id="rCakeSz7"><label>8 inch Tall (four layers, serves 8-24, $135+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="2-Tier Small (4”+6”, serves up to 18, $150+)" id="rCakeSz8"><label>2-Tier Small (4"+6", serves up to 18, $150+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="2-Tier Medium (6“+8”, serves up to 40, $200+)" id="rCakeSz9"><label>2-Tier Medium (6"+8", serves up to 40, $200+)</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeSz" value="3-Tier Regular (4”+6”+8”, serves up to 64, $270+)" id="rCakeSz10"><label>3-Tier Regular (4"+6"+8", serves up to 64, $270+)</label></p>  
+      <br>
+      <p><b>Cake Flavor & Filling Options: (If you want a customized flavor and/or filling, please leave a note in the bottom of the form)</b></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Vanilla Cake + Lemon & Roasted Berry Filling" id="rCakeFlavor1" checked><label>Vanilla Cake + Lemon & Roasted Berry Filling</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Vanilla Cake + Straberry Compote Filling" id="rCakeFlavor2"><label>Vanilla Cake + Straberry Compote Filling</label></p>  
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Chocolate Cake + Salted Caramel Filling" id="rCakeFlavor3"><label>Chocolate Cake + Salted Caramel Filling</label></p>   
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Chocolate Cake + Hazelnut Filling" id="rCakeFlavor4"><label>Chocolate Cake + Hazelnut Filling</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Chocolate Cake + Earl Grey Buttercream" id="rCakeFlavor5"><label>Chocolate Cake + Earl Grey Buttercream</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Lemon Cake + Raspberry Compote Filling" id="rCakeFlavor6"><label>Lemon Cake + Raspberry Compote Filling</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Earl Grey Cake + Soybean Custard Filling" id="rCakeFlavor7"><label>Earl Grey Cake + Soybean Custard Filling</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Earl Grey Cake + Earl Grey Buttercream" id="rCakeFlavor8"><label>Earl Grey Cake + Earl Grey Buttercream</label></p>
+      <p><input class="w3-radio" type="radio" name="cakeFlavor" value="Ube Castella Cake + Vanilla Buttercream" id="rCakeFlavor9"><label>Ube Castella Cake + Vanilla Buttercream</label></p>
+      <br>
+      <p><b>Preferred Payment Method</b></p>
+      <p><input class="w3-radio" type="radio" name="paymentMet" value="Venmo" id="rVenmo" checked><label>Venmo</label></p>
+      <p><input class="w3-radio" type="radio" name="paymentMet" value="Paypal" id="rPaypal"><label>Paypal</label></p>  
+      <p><input class="w3-radio" type="radio" name="paymentMet" value="Zelle" id="rZelle"><label>Zelle</label></p>   
+      <br>
+      <p><b>What theme of the cake would you like? Please be as specific as possible. List any designs, colors, names, words, etc that you would like.</b></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="CakeTheme" id="fcakeTheme"></p>
+      <br>
+      <p><b>Do you have a budget that you would like me to work with?</b></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Budget" id="fbudget"></p>
+      <br>
+      <p><b>Notes (special requests, delivery request)</b></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Your answer" required name="Notes" id="fnotes"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+<script src="scripts/cake.js"></script>
+</html>

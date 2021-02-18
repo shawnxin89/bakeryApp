@@ -85,7 +85,8 @@ router.post('/add/cookie', (req, res) => __awaiter(void 0, void 0, void 0, funct
     }
     // add order to the database
     yield userOrder.addCookie(cookieOrder);
-    return res.status(CREATED).end();
+    console.log("item created in database");
+    return res.status(CREATED).json({ result: "created" });
 }));
 /******************************************************************************
  *                       Update - "PUT /api/users/update"
