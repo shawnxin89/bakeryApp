@@ -1,5 +1,5 @@
 document.getElementById('cakeform').onsubmit = async function() {
-    alert("submitted");
+    // alert("submitted");
     var ele = document.getElementsByName('contactMet');
     var contactMetValue;
     for(i = 0; i < ele.length; i++) { 
@@ -48,7 +48,7 @@ document.getElementById('cakeform').onsubmit = async function() {
       }
 
       // add await
-      await fetch('http://node-express-env-2.eba-wyamc49h.us-west-2.elasticbeanstalk.com/api/users/add/cake', {
+      await fetch('http://localhost:8081/api/users/add/cake', {
               method: 'POST', // or 'PUT'
               mode: 'cors',
               headers: {
