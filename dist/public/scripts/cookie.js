@@ -1,4 +1,5 @@
 document.getElementById('cookieform').onsubmit = async function() {
+    alert("Thank you!");
     var ele = document.getElementsByName('contactMet');
     var contactMetValue;
     for(i = 0; i < ele.length; i++) { 
